@@ -59,19 +59,19 @@ body部分：
 <br/>
 **5. Position的relative和absolute属性值详解**
 
-[十步图解CSS的position](http://blog.jobbole.com/49320/) >br/>
+[十步图解CSS的position](http://blog.jobbole.com/49320/) <br/>
 [postion为absolute用于文字阴影效果和自适应布局（图片旁有文字）](http://www.zhangxinxu.com/wordpress/2010/01/absolute%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%9A%84%E9%9D%9E%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%94%A8%E6%B3%95/)
 如果你给某个元素指定了postion的值为“relative”，那么你就可以通过“T-R-B-L”(也就是top,right,bottom,left)来设置元素的定位值。如果你给元素指定了absolute，整个元素就会漂出文档流，而且元素自身的物理空间也同时消失了。关于绝对定位元素(absolute)的定位是相对于包含块(containing block)来说的，关于包含块的定义：
-[w3c中containing block的规定](https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning#Containing_blocks) br/>
+[w3c中containing block的规定](https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning#Containing_blocks) <br/>
 ![这里写图片描述](http://img.blog.csdn.net/20161101160829037)
 <br/>
-6. [浅谈CSS3中单位**px,em,rem**的区别与优劣](http://wenku.baidu.com/link?url=DpolT1okOoEdwzI99PE3nEwBitkl1GGrM8fI9V4ffWED5OWmTMQKuquJoae_0tT45jz5ywE4O3brHHSVOz5_rkOtLaS56NFjosdqOyPZNMK) em相对父元素的字体大小，rem相对根元素html的字体大小。
-7. 代码: `<code>`; 代码块:`<pre>`; 变量:`<var`;输入:`<kbd>`;输出:`<samp>`
+6. [浅谈CSS3中单位**px,em,rem**的区别与优劣](http://wenku.baidu.com/link?url=DpolT1okOoEdwzI99PE3nEwBitkl1GGrM8fI9V4ffWED5OWmTMQKuquJoae_0tT45jz5ywE4O3brHHSVOz5_rkOtLaS56NFjosdqOyPZNMK) em相对父元素的字体大小，rem相对根元素html的字体大小。<br/>
+7. 代码: `<code>`; 代码块:`<pre>`; 变量:`<var`;输入:`<kbd>`;输出:`<samp>` <br/>
 8. **双飞翼布局、圣杯布局**（三列布局）
 下边代码可以实现三列布局，但是left和right始终占据middle的padding：
 ![运用了box-sizing](http://img.blog.csdn.net/20161106134546335)
 <br/>
-圣杯布局：把container的内容移到中间
+圣杯布局：把container的内容移到中间<br/>
 **9. 表格属性**
 
 9.1 在给table加边框时，html中直接`<table border="1">`,也会给th，td加上边框，这里的border规定表格边框的宽度，值越大，表格的边框越粗，但是th,td的边框不会变粗。在css样式中，要写`table, th, td {border: 1px solid black}`或其他border-width, border-style和border-color，如果不规定border-style(默认值为none)，即使有width，边框也不会出现。<br/>
@@ -95,9 +95,9 @@ var str = "<table border='1px'>";
         var val = sessionStorage.getItem(tm);
         str += "<tr><td>"+tm+"</td><td>"+val+"</td></tr>";
     }
-    str += "</table>";
-    ```
-    <br/>
+str += "</table>";
+```
+<br/>
 **12. 切图工具fireworks和PS比较：** http://www.jb51.net/photoshop/23509.html
 **13. [JS操作JSON总结]**(http://www.cnblogs.com/worfdream/articles/1956449.html)
 ```
