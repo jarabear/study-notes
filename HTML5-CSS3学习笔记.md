@@ -98,9 +98,9 @@ var str = "<table border='1px'>";
 str += "</table>";
 ```
 <br/>
-**12. 切图工具fireworks和PS比较：** http://www.jb51.net/photoshop/23509.html
-**13. [JS操作JSON总结]**(http://www.cnblogs.com/worfdream/articles/1956449.html)
-```
+**12. 切图工具fireworks和PS比较**:  http://www.jb51.net/photoshop/23509.html <br/>
+**13. [JS操作JSON总结](http://www.cnblogs.com/worfdream/articles/1956449.html)**:  <br/>
+eg:
 {
 "employees": [
 { "firstName":"Bill" , "lastName":"Gates" },
@@ -108,25 +108,22 @@ str += "</table>";
 { "firstName":"Thomas" , "lastName":"Carter" }
 ]
 }
-```
+<br/>
 **14.  text-decoration-style**: dotted 等浏览器不支持
 
-[text-decoration新特性表现](http://www.zhangxinxu.com/wordpress/2015/06/know-css-text-decoration-style-color-ship/)
+[text-decoration新特性表现](http://www.zhangxinxu.com/wordpress/2015/06/know-css-text-decoration-style-color-ship/) <br/>
 
-**15. background的css属性**
+**15. background的css属性**<br/>
 15.1 [如何用雪碧图中的一个小图标](http://zhidao.baidu.com/link?url=wbB0M9FHXmsM8gUCMequGj2qD94kRSBD0lCs0o26r66LyeJY7SyojdHvTbc0fQpYptG4ui7d9r7MjxEb-96nra) (用background-position)<br/>
 15.2 backgound-color属性不能继承，默认值transparent. 
 `background:url("1.jpg") fixed center no-repeat;`
     等同于
-    ```
-    /*background-image: url("1.jpg");*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat:no-repeat;*/
-}
-```
+    /\*background-image: url("1.jpg");\*/
+    /\*background-attachment: fixed;\*/
+    /\*background-position: center;\*/
+    /\*background-repeat:no-repeat;\*/
 <br/>
-15.3
+15.3 如下：
 ```
 div{
     width:80%;
@@ -142,11 +139,12 @@ div{
     /*background-origin: content-box;*/
 }
 ```
-如果以百分比规定尺寸**background-size**，那么尺寸相对于父元素的宽度和高度，这里为div。size为100% 100%时最好，自适应box的大小。size为cover和contain时，见[background-size为cover和contain](http://sentsin.com/web/939.html) <br/>
+<br/>
+如果以百分比规定尺寸**background-size**，那么尺寸相对于父元素的宽度和高度，这里为div。size为100% 100%时最好，自适应box的大小。size为cover和contain时，见[background-size为cover和contain](http://sentsin.com/web/939.html) 。<br/>
 15.4 **background-origin**与**background-clip**的区别：origin是从border，padding和content开始100% 100%的显示，每次都是完整的图片。clip是开始图片100% 100%的显示，border会把在border外的部分去掉;padding会把在border的部分cut掉；当clip的值为content-box时，会把在border和padding的部分cut掉，只留下图片在content-box的部分。<br/>
 15.5 **background-position**当其为left或right时，表示left center/right center，在最左/右边的中间，left top 10px表示贴着左边离上面10px（left 0 top 10px)。center center/50% 50%，背景图的中心与图像的中心重合，在离上下左右都居中的位置。图片默认情况下其左上角与承载其的元素左上角重合，设置background-position:-10px 10px,即把背景图片往左移10px,下移10px。背景图片比承载其的元素大，只显示背景图片在元素内部的画面。
 <br/>
-**16. width, height, padding, margin, border**
+**16. width, height, padding, margin, border** <br/>
 **box-sizing**: border-box(width包括了border和padding和content），为**怪异盒模型**，一般用于mobile开发，先规定外面的“鞋盒”width和height，再调节至里面的“鞋子”，从外到里。box-sizing；content-box(width只包括content），设置size从里到外，一般用于pc。[MDN中关于box-sizing的定义](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 ![content-box,padding-box,border-box,margin-box各范围图](http://img.blog.csdn.net/20161102220019389)
 正常盒子与怪异盒模型code：
