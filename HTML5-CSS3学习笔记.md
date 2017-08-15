@@ -115,14 +115,7 @@ eg:
 
 **15. background的css属性**<br/>
 15.1 [如何用雪碧图中的一个小图标](http://zhidao.baidu.com/link?url=wbB0M9FHXmsM8gUCMequGj2qD94kRSBD0lCs0o26r66LyeJY7SyojdHvTbc0fQpYptG4ui7d9r7MjxEb-96nra) (用background-position)<br/>
-15.2 backgound-color属性不能继承，默认值transparent. 
-`background:url("1.jpg") fixed center no-repeat;`
-    等同于
-    /\*background-image: url("1.jpg");\*/
-    /\*background-attachment: fixed;\*/
-    /\*background-position: center;\*/
-    /\*background-repeat:no-repeat;\*/
-<br/>
+15.2 **backgound-color**属性不能继承，默认值transparent. <br/>
 15.3 如下：
 ```
 div{
